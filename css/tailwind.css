@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .card {
+        @apply relative overflow-hidden bg-white shadow-md transition-all duration-300 ease-in-out transform;
+    }
+
+    .card:hover {
+        @apply shadow-xl scale-105 rounded-2xl;
+    }
+
+    .card-title {
+        @apply relative inline-block font-bold text-lg;
+    }
+
+    .card-title::after {
+        content: "";
+        @apply absolute left-0 bottom-0 w-0 h-[3px] bg-orange-500 transition-all duration-300;
+    }
+
+    .card:hover .card-title::after {
+        @apply w-full;
+    }
+
+    .card-background::before {
+        content: "";
+        @apply absolute inset-0 bg-white opacity-10 transition-transform duration-300 scale-100;
+    }
+
+    .card:hover .card-background::before {
+        @apply scale-110;
+    }
+
+    /* Slide animations */
+    .slide-into-view {
+        opacity: 0;
+        transition: opacity 1s ease, transform 1s ease;
+    }
+
+    .slide-into-view-active {
+        opacity: 1;
+    }
+
+    .slide-from-left {
+        transform: translateX(-100%);
+    }
+
+    .slide-from-left-active {
+        transform: translateX(0);
+    }
+
+    .slide-from-right {
+        transform: translateX(100%);
+    }
+
+    .slide-from-right-active {
+        transform: translateX(0);
+    }
+
+    .slide-from-top {
+        transform: translateY(-100%);
+    }
+
+    .slide-from-top-active {
+        transform: translateY(0);
+    }
+
+    .slide-from-bottom {
+        transform: translateY(100%);
+    }
+
+    .slide-from-bottom-active {
+        transform: translateY(0);
+    }
+
+    .staggered-text {
+        @apply opacity-0 transition-opacity duration-1000 ease-in-out; /* Slower fade-in effect */
+    }
+
+    .animate-fadeIn {
+        @apply opacity-100; /* Fully visible */
+    }
+}

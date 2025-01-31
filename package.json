@@ -1,0 +1,19 @@
+{
+  "name": "smm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+  "dev": "npx tailwindcss -i ./css/tailwind.css -o ./css/styles.css --watch",
+  "build:css": "npx tailwindcss -i ./css/tailwind.css -o ./css/styles.css --watch"
+},
+
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^4.0.0"
+  }
+}

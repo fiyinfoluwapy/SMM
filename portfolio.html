@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio - Maggs Creative Agency</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Bitter:ital,wght@0,100..900;1,100..900&family=Lacquer&display=swap"
+        rel="stylesheet">
+
+    <!-- JavaScript -->
+    <script src="./js/script.js" defer></script>
+</head>
+
+<body class="bg-primaryWhite text-primaryBlack">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg fixed top-0 w-full z-50">
+        <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+            <a href="index.html">
+                <div class="text-xl font-bold text-primaryOrange font-lacquer">
+                    Maggs Creative Agency
+                </div>
+            </a>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-gray-600 focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+
+            <div id="menu" class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-gray-600 hover:text-primaryOrange hover:font-lacquer">Home</a>
+                <a href="#freelance-section" class="text-gray-600 hover:text-primaryOrange hover:font-lacquer">About</a>
+                <a href="#services" class="text-gray-600 hover:text-primaryOrange hover:font-lacquer">Services</a>
+                <a href="#portfolio" class="text-gray-600 hover:text-primaryOrange hover:font-lacquer">Portfolio</a>
+                <a href="#contact" class="text-gray-600 hover:text-primaryOrange hover:font-lacquer">Contact</a>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="fixed top-0 left-0 w-full h-full bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden">
+
+            <div class="flex justify-end p-4">
+                <button id="menu-close" class="text-gray-600 focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <nav class="flex flex-col items-center mt-10 space-y-4">
+                <a href="index.html" class="text-gray-600 hover:text-primaryOrange hover:font-lacquer">Home</a>
+                <a href="#freelance-section" class="text-gray-600 hover:text-primaryOrange text-xl hover:font-lacquer">About</a>
+                <a href="#services" class="text-gray-600 hover:text-primaryOrange text-xl hover:font-lacquer">Services</a>
+                <a href="#portfolio" class="text-gray-600 hover:text-primaryOrange text-xl hover:font-lacquer">Portfolio</a>
+                <a href="#contact" class="text-gray-600 hover:text-primaryOrange text-xl hover:font-lacquer">Contact</a>
+            </nav>
+        </div>
+    </nav>
+
+
+    <!-- Banner Section -->
+    <section class="relative bg-primaryOrange bg-center h-screen"
+        style="background-image: url('assets/images/dark-mosaic.png'); background-size: auto; background-color: #ff6c1f;">
+
+        <div class="absolute inset-0 flex justify-center items-center px-4">
+            <div class="text-center">
+                <!-- Main Heading -->
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-primaryBlack font-anton font-extrabold">
+                    <span class="inline-block slide-into-view slide-from-top" data-delay="200" >Adenubi</span>
+                    <br>
+                    <span class="inline-block slide-into-view slide-from-bottom" data-delay="200">Oluwadoyinsola Margaret</span>
+                </h1>
+
+                <!-- Subtext with Animation -->
+                <p class="text-lg sm:text-xl font-semi-bold text-primaryBlack mt-9 font-anton">
+                    <span class="inline-block slide-into-view slide-from-right" data-delay="200">SOCIAL MEDIA MANAGER</span>
+                    <span class="inline-block text-primaryWhite slide-into-view slide-from-bottom" data-delay="900">//</span>
+                    <span class="inline-block slide-into-view slide-from-left" data-delay="200">CONTENT STRATEGIST</span>
+                </p>
+            </div>
+        </div>
+
+        <!-- Footer Links (Instagram & Email) -->
+        <div class="absolute bottom-6 left-4 right-4 flex justify-between items-center space-x-4 text-sm text-gray-600">
+            <a href="https://www.instagram.com/yourInstagram" target="_blank"
+                class="inline-block slide-into-view slide-from-bottom" data-delay="900">
+                <img src="./assets/icons/Instagram.gif" alt="Instagram" class="w-12 h-12">
+            </a>
+            <a href="mailto:your-email@example.com" target="_blank"
+                class="inline-block slide-into-view slide-from-top" data-delay="900">
+                <img src="./assets/icons/Gmail.gif" alt="Email" class="w-12 h-12">
+            </a>
+        </div>
+    </section>
+
+    <!-- Freelance Section -->
+    <section id="freelance-section" class="relative w-full h-screen bg-cover bg-fixed" style="background-image: url('assets/images/diagonal-striped-brick.png');">
+        <div class="absolute inset-0 bg-totemPole opacity-40"></div> <!-- Overlay for contrast -->
+        
+        <div class="relative z-10 flex flex-col justify-center items-end h-full text-white px-8 md:px-20">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 staggered-text font-bitter font-black text-primaryBlack">FREELANCE SOCIAL MEDIA MANAGER</h2>
+            <p class="mt-4 text-base sm:text-lg staggered-text text-black">
+                Helping brands grow through effective social media strategies.
+            </p>
+            <p class="text-base sm:text-lg staggered-text text-black">Expert in content creation, engagement, and analytics.</p>
+            <p class="text-base sm:text-lg staggered-text text-black">Tailored campaigns to boost visibility and sales.</p>
+            <p class="text-base sm:text-lg staggered-text text-black">Organic and paid marketing strategies.</p>
+            <p class="text-base sm:text-lg staggered-text text-black">Trend-based growth hacking for brands.</p>
+            <p class="text-base sm:text-lg staggered-text text-black">Community building for long-term engagement.</p>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="max-w-5xl mx-auto px-6">
+            <!-- Section Title -->
+            <h2 class="text-left text-2xl sm:text-3xl md:text-4xl text-gray-800 mb-8 font-bitter font-black">
+                My Work Experience
+            </h2>
+    
+            <!-- Card Container -->
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="card p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-transform transform duration-300 card-background">
+                    <h3 class="card-title text-gray-900">Kwaraloaded Blog</h3>
+                    <p class="text-sm text-gray-500 font-semibold">November 2022 - February 2023</p>
+                    <p class="text-gray-700 mt-3">
+                        Managed content strategy and social media presence, increasing engagement by 40% within three months.
+                    </p>
+                    <p class="text-gray-700">Developed digital marketing campaigns.</p>
+                    <p class="text-gray-700">Analyzed user data for growth strategies.</p>
+                </div>
+    
+                <!-- Card 2 -->
+                <div class="card p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-transform transform duration-300 card-background">
+                    <h3 class="card-title text-gray-900">XYZ Agency</h3>
+                    <p class="text-sm text-gray-500 font-semibold">March 2023 - Present</p>
+                    <p class="text-gray-700 mt-3">
+                        Led a team of social media strategists to manage high-profile clients.
+                    </p>
+                    <p class="text-gray-700">Optimized ad campaigns for higher ROI.</p>
+                    <p class="text-gray-700">Created engaging content calendars.</p>
+                </div>
+    
+                <!-- Card 3 -->
+                <div class="card p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-transform transform duration-300 card-background">
+                    <h3 class="card-title text-gray-900">Freelance</h3>
+                    <p class="text-sm text-gray-500 font-semibold">2021 - Present</p>
+                    <p class="text-gray-700 mt-3">
+                        Provided marketing solutions for small businesses and startups.
+                    </p>
+                    <p class="text-gray-700">Increased brand awareness through innovative strategies.</p>
+                    <p class="text-gray-700">Consulted on influencer partnerships.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-primaryOrange">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-primaryBlack font-bitter font-black mb-8">
+                Let's Work Together
+            </h2>
+            <p class="text-lg sm:text-xl text-primaryBlack mb-8">
+                Ready to take your brand to the next level? Reach out to me today!
+            </p>
+            <a href="mailto:your-email@example.com" class="inline-block bg-primaryBlack text-white px-6 py-3 rounded-lg hover:bg-opacity-90 transition-colors duration-300">
+                Get in Touch
+            </a>
+        </div>
+    </section>
+
+</body>
+
+</html>
