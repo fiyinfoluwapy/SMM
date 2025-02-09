@@ -48,8 +48,10 @@
     }
 
     .slide-from-left-active {
-        transform: translateX(0);
+        transform: translateX(0) !important;
+        opacity: 1 !important;
     }
+
 
     .slide-from-right {
         transform: translateX(100%);
@@ -120,4 +122,9 @@
         @apply p-6 pt-0 text-gray-600;
     }
 
+  
+
+
 }
+
+
